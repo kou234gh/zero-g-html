@@ -197,6 +197,7 @@
 }
 
 .contact .img {
+  width: 1rem;
   position: relative;
   flex: 0 0 auto;
 }

@@ -1,6 +1,49 @@
 section{
   width: 100%;
 }
+
+/* section header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  /* カスタム */
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  /* カスタム */
+  width: 100%;
+  min-width: 320px;
+  min-height: 52px;
+}
+
+.header .origin-logo-bg {
+  position: relative;
+  width: 77px;
+  height: 29px;
+  background-image: url(./img/origin-logo-transparent.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.header .button-svg {
+  position: relative;
+  width: 146px;
+  height: 36px;
+}
+
+
 /* section01 .svg*/
 
 /* section02 */
