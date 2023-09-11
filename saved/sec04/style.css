@@ -1,0 +1,201 @@
+.recommend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 16px;
+  position: relative;
+  background-color: #f6f6f6;
+}
+
+.recommend .title-cover {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.recommend .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  align-self: stretch;
+  width: 100%;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.recommend .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0px;
+  align-self: stretch;
+  width: 100%;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.recommend .rec {
+  height: 169.83px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recommend .frame-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  width: 100%;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.recommend .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background-color: #123d5e;
+  border-radius: 30px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.recommend .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #eceeef;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 21.2px;
+  white-space: nowrap;
+}
+
+.recommend .bg-blackshapes {
+  background-image: url(./img/bg-blackshapes-1.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.recommend .text-wrapper-2 {
+  width: fit-content;
+  font-weight: 400;
+  color: #eceeef;
+  font-size: 22px;
+  line-height: 22px;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  letter-spacing: 0;
+}
+
+.recommend .div-wrapper-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.recommend .text-wrapper-3 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Noto Sans JP", Helvetica;
+  font-weight: 700;
+  color: #333333;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.recommend .rec-img {
+  height: 169px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recommend .bg-blackshapes-2 {
+  background-image: url(./img/bg-blackshapes-2.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.recommend .text-wrapper-4 {
+  flex: 1;
+  font-weight: 700;
+  color: #333333;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  letter-spacing: 0;
+}
+
+.recommend .bg-blackshapes-3 {
+  background-image: url(./img/bg-blackshapes-3.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.recommend .text-wrapper-5 {
+  width: fit-content;
+  margin-left: -2px;
+  margin-right: -2px;
+  font-weight: 400;
+  color: #eceeef;
+  font-size: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  letter-spacing: 0;
+}
