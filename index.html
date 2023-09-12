@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex,nofollow" />
   <!-- <title /> -->
-  <!-- <link rel="stylesheet" href="globals.css" /> -->
+  <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style-tablet.css" /> -->
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -20,7 +22,11 @@
   </div>
 
   <!-- section_01 -->
-  <img src="./img/sec01_top_image.svg" style="width: 100%; object-fit: cover;" />
+  <!-- sp 320px~767px  -->
+  <img class="top-banner-sp" src="./img/sec01_mainbanner/main_banner_sp.svg" alt="最大限の開放、無重力の実感" />
+
+  <!-- tblet 768~1199px && pc 1200px~ -->
+  <img class="top-banner-pc" src="./img/sec01_mainbanner/main_banner_pc.svg" alt="最大限の開放、無重力の実感" />
 
   <!-- section_02 id="banner-stretch" -->
   <section id="banner-stretch" class="banner-stretch">
@@ -31,17 +37,17 @@
     </div>
     <div class="div">
       <div class="border-svg">
-        <div class="stretch-string">
-          <div class="text-wrapper-2">ストレッチ</div>
+        <div class="stretch-string" style="display: none;">
+          <!-- <div class="text-wrapper-2">ストレッチ</div> -->
         </div>
-        <img class="clip-path-group" src="img/clip-path-group.png" />
+        <img class="clip-path-group" src="img/sec02/title.svg" />
       </div>
       <div class="frame-2">
-        <img class="img-2" src="img/60-7200.svg" />
-        <img class="img-2" src="img/arrow.svg" />
-        <img class="img-2" src="img/5700.svg" />
+        <img class="img-2" src="img/sec02/60-7200.svg" />
+        <img class="img-2 img-2_arrow" src="img/sec02/arrow.svg" />
+        <img class="img-2" src="img/sec02/5700.svg" />
       </div>
-      <img class="line-2" src="img/line-13.png" />
+      <img class="line-2" src="img/sec02/line-13.png" />
       <div class="description">
         <div class="text-wrapper-3">
           痩せるため、働くため、人生を楽しむ為に必要不可欠な動ける身体。<br />ストレッチ、筋膜リリースで柔軟性を高め、よりスムーズな可動を実現し<br />怪我のない身体、軽い身体、痩せやすい身体作りを徹底的にサポート。
@@ -122,16 +128,18 @@
       </div>
     </div>
   </section>
+
   <!-- section_04 -->
   <section class="recommend">
-    <img class="title-cover" src="img/title-cover.png" />
+    <img class="title-cover" src="img/sec04_recommend/title.svg" />
     <div class="frame">
       <div class="div">
-        <img class="rec" src="img/rec-img1.png" />
+        <img class="rec-img" src="img/rec-img1.png" />
         <div class="frame-2">
           <div class="div-wrapper"><div class="text-wrapper">CASE-01</div></div>
           <!-- <div class="bg-blackshapes"><div class="text-wrapper-2">疲れが取れない</div></div> -->
-          <div class="bg-blackshapes"><div class="text-wrapper-2"></div></div>
+          <!-- <div class="bg-blackshapes"></div> -->
+          <img src="./img/bg-blackshapes-1.svg" />
           <div class="div-wrapper-2">
             <div class="text-wrapper-3">
               身体のバランスを整え、頭痛や肩こり,体質を根本から改善<br />健康になりたい。そんなあなたにピッタリです!!
@@ -144,7 +152,8 @@
         <div class="frame-2">
           <div class="div-wrapper"><div class="text-wrapper">CASE-02</div></div>
           <!-- <div class="bg-blackshapes-2"><div class="text-wrapper-2">筋トレが続かない</div></div> -->
-          <div class="bg-blackshapes-2"><div class="text-wrapper-2"></div></div>
+          <!-- <div class="bg-blackshapes-2"></div> -->
+          <img src="./img/bg-blackshapes-2.svg" />
           <div class="div-wrapper-2">
             <div class="text-wrapper-4">
               ストレッチのプロの任せるだけ、大きい筋肉の深層部までアプローチし動かず姿勢改善、代謝UP。
@@ -157,7 +166,8 @@
         <div class="frame-2">
           <div class="div-wrapper"><div class="text-wrapper">CASE-03</div></div>
           <!-- <div class="bg-blackshapes-3"><div class="text-wrapper-5">ダイエット効果を実感したい</div></div> -->
-          <div class="bg-blackshapes-3"><div class="text-wrapper-5"></div></div>
+          <!-- <div class="bg-blackshapes-3"></div> -->
+          <img src="./img/bg-blackshapes-3.svg" />
           <div class="div-wrapper-2">
             <div class="text-wrapper-4">
               柔軟性、基礎代謝UPで日々エネルギー消費量向上。<br />理想のボディラインへ!!
