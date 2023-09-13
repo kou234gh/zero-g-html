@@ -4,19 +4,34 @@ section {
   padding: 8vw !important;
 }
 
-/* 
+p {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+
+
+
 @media screen and (min-width:768px) {
-  section{
-    padding: 4rem !important;
-    padding: 10vw !important;
+  html {
+    font-size: 20px !important;
+  }
+
+  p {
+    line-height: 130% !important;
   }
 }
+
 @media screen and (min-width:1200px) {
-  section{
-    padding: 8rem !important;
-    padding: 10vw !important;
+  html {
+    font-size: 24px !important;
   }
-} */
+
+  p {
+    line-height: 130% !important;
+  }
+}
 
 /* section header */
 .header {
@@ -41,7 +56,7 @@ section {
   /* height: 29px; */
   height: 10vw;
   min-height: 2.5rem;
-  max-height: 4.5rem;
+  max-height: 3.5rem;
   aspect-ratio: 77/29;
   background-image: url(./img/origin-logo-transparent.png);
   background-size: cover;
@@ -70,14 +85,12 @@ section {
   position: relative;
   /* width: 146px; */
   /* height: 36px; */
-  height: 10vw;
-  min-height: 3rem;
-  max-height: 5rem;
+  /* height: 10vw; */
+  min-height: 3.5rem;
+  max-height: 4.5rem;
   /* width: 100%; */
   aspect-ratio: 146/36;
-
 }
-
 
 /* section01 .svg*/
 
@@ -92,8 +105,7 @@ img.top-banner-pc {
   display: none;
 }
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
   img.top-banner-sp {
     display: none;
   }
@@ -108,9 +120,6 @@ img.top-banner-pc {
   }
 }
 
-
-
-
 /* section02 */
 .banner-stretch {
   display: flex;
@@ -123,12 +132,13 @@ img.top-banner-pc {
   padding: 64px 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 55.21%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 55.21%,
+      rgba(0, 0, 0, 0) 100%);
   background-image: url(./img/components/background/banner-stretch.png);
   background-size: cover;
   background-position: 50% 50%;
-
-
 }
 
 .banner-stretch svg.title {
@@ -155,7 +165,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 20px;
@@ -164,37 +175,13 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
 }
 
-/* .banner-stretch .lines {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  flex-grow: 1;
-} */
-
-/* .banner-stretch .line {
-  flex: 1;
-  flex-grow: 1;
-  margin-left: -2.42px;
-  position: relative;
-  align-self: stretch;
-} */
-
-/* .banner-stretch .img {
-  flex: 1;
-  flex-grow: 1;
-  position: relative;
-  align-self: stretch;
-} */
-
 .banner-stretch .div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 32px 16px;
+  /* gap: 16px; */
+  gap: 4vw;
+  padding: 8vw 4vw;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -229,14 +216,14 @@ img.top-banner-pc {
   flex-grow: 1;
 }
 
-
 .banner-stretch .text-wrapper-2 {
   width: fit-content;
   margin-top: -3.5px;
   margin-bottom: -1.5px;
   font-weight: 900;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 20px;
@@ -269,7 +256,7 @@ img.top-banner-pc {
   flex: 0 0 auto;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .banner-stretch .frame-2 {
     display: flex;
     flex-direction: row;
@@ -288,18 +275,32 @@ img.top-banner-pc {
     flex: 0 0 auto;
     transform: rotate(-90deg);
   }
-
 }
-
 
 .banner-stretch .img-2 {
   position: relative;
   flex: 0 0 auto;
+  /* aspect-ratio: ; */
+}
+
+.banner-stretch img.price-before {
+  aspect-ratio: 131/64;
+  width: 35%;
+}
+
+.banner-stretch img.img-2_arrow {
+  aspect-ratio: 50/24;
+}
+
+.banner-stretch img.price-after {
+  aspect-ratio: 202/67;
+  width: 60%;
 }
 
 .banner-stretch .line-2 {
   width: 100%;
   height: 1px;
+  background-color: #333333;
   object-fit: cover;
   position: relative;
   align-self: stretch;
@@ -320,11 +321,14 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #575757;
-  font-size: 16px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   letter-spacing: 0;
   line-height: 20.8px;
   position: relative;
   font-family: "Roboto", Helvetica;
+
+  text-align: center;
 }
 
 .banner-stretch .action-banner {
@@ -336,21 +340,22 @@ img.top-banner-pc {
   justify-content: center;
   align-content: center;
   gap: 16px;
-  padding: 16px 8px;
+  padding: 4% 8%;
   position: relative;
-  align-self: stretch;
-  width: 100%;
+  /* align-self: stretch; */
+
+  width: fit-content;
+  max-width: 100%;
+
   flex: 0 0 auto;
   background-color: #123d5e;
   border-radius: 10px;
 }
 
 .banner-stretch .frame-3 {
-  position: relative;
-  align-self: stretch;
   width: fit-content;
-  height: 3rem;
-  flex: 0 0 auto;
+  height: 3.5rem;
+  aspect-ratio: 202/53;
 }
 
 .banner-stretch .button {
@@ -404,7 +409,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #575757;
-  font-size: 14px;
+  font-size: 0.875rem;
+  /* font-size: 0.875rem; px */
   text-align: center;
   letter-spacing: 1.6px;
   line-height: 18px;
@@ -423,12 +429,14 @@ img.top-banner-pc {
   flex: 0 0 auto;
 }
 
+/* 「回数券」 */
 .banner-stretch .text-wrapper-5 {
   width: fit-content;
   margin-top: -1px;
   font-weight: 700;
   color: #08a39c;
-  font-size: 17px;
+  font-size: 1rem;
+  /* font-size: 1.1rem; px */
   text-align: center;
   letter-spacing: 1.6px;
   line-height: 17px;
@@ -437,11 +445,13 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
 }
 
+/* 「について」 */
 .banner-stretch .text-wrapper-6 {
   width: fit-content;
   font-weight: 700;
   color: #575757;
-  font-size: 14px;
+  font-size: 0.875rem;
+  /* font-size: 0.875rem; px */
   text-align: center;
   letter-spacing: 1.6px;
   line-height: 14px;
@@ -469,11 +479,13 @@ img.top-banner-pc {
   border-color: #333333;
 }
 
+/* こちらの文字 */
 .banner-stretch .text-wrapper-7 {
   width: fit-content;
   font-weight: 700;
   color: #333333;
-  font-size: 14px;
+  font-size: 0.875rem;
+  /* font-size: 0.875rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 19px;
@@ -490,7 +502,9 @@ img.top-banner-pc {
   padding: 32px 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg, rgb(245, 246, 248) 0%, rgba(245, 246, 248, 0) 100%);
+  background: linear-gradient(180deg,
+      rgb(245, 246, 248) 0%,
+      rgba(245, 246, 248, 0) 100%);
   background-image: url(./img/components/background/merit-stretch.jpeg);
   background-size: cover;
   background-position: 50% 50%;
@@ -510,10 +524,11 @@ img.top-banner-pc {
 
 .merit-stretch .clip-path-group {
   position: relative;
-  flex: 1;
-  flex-grow: 1;
+  /* flex: 1; */
+  /* flex-grow: 1; */
   /* height: 49.58px; */
-  height: 5rem;
+  height: 8rem;
+  aspect-ratio: 550/177 !important;
 }
 
 .merit-stretch .view {
@@ -580,7 +595,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 900;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 0;
   line-height: normal;
 }
@@ -589,7 +605,8 @@ img.top-banner-pc {
   flex: 1;
   margin-top: -1px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.1rem;
+  /* font-size: 18px; px */
   line-height: 27px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -633,7 +650,8 @@ img.top-banner-pc {
   align-self: stretch;
   -webkit-text-stroke: 0.3px #333333;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: normal;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -645,10 +663,10 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 900;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 0;
 }
-
 
 /* section04 */
 .recommend {
@@ -688,7 +706,7 @@ img.top-banner-pc {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 2rem;
   padding: 16px 0px;
   align-self: stretch;
   width: 100%;
@@ -702,14 +720,13 @@ img.top-banner-pc {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 2rem;
   padding: 16px 0px;
   align-self: stretch;
   width: 100%;
   position: relative;
   flex: 0 0 auto;
 }
-
 
 .recommend .frame-2 {
   display: flex;
@@ -742,7 +759,8 @@ img.top-banner-pc {
   font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #eceeef;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 0;
   line-height: 21.2px;
   white-space: nowrap;
@@ -769,6 +787,7 @@ img.top-banner-pc {
   font-weight: 400;
   color: #eceeef;
   font-size: 22px;
+    font-size: 22px; px
   line-height: 22px;
   white-space: nowrap;
   position: relative;
@@ -794,13 +813,13 @@ img.top-banner-pc {
   font-family: "Noto Sans JP", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 0;
   line-height: 30px;
 }
 
 .recommend .rec-img {
-
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -825,18 +844,6 @@ img.top-banner-pc {
   background-position: 50% 50%;
 } */
 
-.recommend .text-wrapper-4 {
-  flex: 1;
-  font-weight: 700;
-  color: #333333;
-  font-size: 20px;
-  line-height: 30px;
-  position: relative;
-  margin-top: -1px;
-  font-family: "Roboto", Helvetica;
-  letter-spacing: 0;
-}
-
 /* .recommend .bg-blackshapes-3 {
   background-image: url(./img/bg-blackshapes-3.svg);
   display: flex;
@@ -859,7 +866,8 @@ img.top-banner-pc {
   margin-right: -2px;
   font-weight: 400;
   color: #eceeef;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 20px;
   white-space: nowrap;
   position: relative;
@@ -867,7 +875,6 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   letter-spacing: 0;
 }
-
 
 /* section05 バナー繰り返し*/
 
@@ -880,7 +887,9 @@ img.top-banner-pc {
   padding: 32px 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg, rgb(245, 246, 248) 0%, rgba(245, 246, 248, 0) 100%);
+  background: linear-gradient(180deg,
+      rgb(245, 246, 248) 0%,
+      rgba(245, 246, 248, 0) 100%);
   background-image: url(./img/reviews.png);
   background-size: cover;
   background-position: 50% 50%;
@@ -903,7 +912,8 @@ img.top-banner-pc {
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 40px;
+  font-size: 2.5rem;
+  /* font-size: 2.5rem; px */
   text-align: center;
   letter-spacing: 3.6px;
   line-height: 57.6px;
@@ -916,7 +926,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   text-align: center;
   letter-spacing: 0.85px;
   line-height: 18px;
@@ -925,10 +936,10 @@ img.top-banner-pc {
 .reviews .grids {
   display: grid;
   grid-auto-flow: row;
-  gap: 8vw
+  gap: 8vw;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .reviews .grids {
     display: grid;
     grid-auto-flow: column;
@@ -993,7 +1004,8 @@ img.top-banner-pc {
 .reviews .text-wrapper-2 {
   flex: 1;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   letter-spacing: 0.9px;
   line-height: 19.5px;
   position: relative;
@@ -1018,7 +1030,8 @@ img.top-banner-pc {
   align-self: stretch;
   margin-top: -1px;
   color: #dddddd;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 1.2px;
   line-height: 26px;
   position: relative;
@@ -1044,15 +1057,14 @@ img.top-banner-pc {
 .reviews .text-wrapper-4 {
   align-self: stretch;
   color: #123d5e;
-  font-size: 18px;
+  font-size: 1.1rem;
+  /* font-size: 18px; px */
   letter-spacing: 1.08px;
   line-height: 27px;
   position: relative;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
 }
-
-
 
 /* section07 */
 .sec-apeal-zero-g {
@@ -1064,7 +1076,9 @@ img.top-banner-pc {
   padding: 3rem 1rem;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg, rgb(244, 245, 247) 0%, rgba(255, 253.94, 253.94, 0) 100%);
+  background: linear-gradient(180deg,
+      rgb(244, 245, 247) 0%,
+      rgba(255, 253.94, 253.94, 0) 100%);
   background-image: url(./img/components/background/bg-2.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -1097,7 +1111,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 600;
   color: #1e547d;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   text-align: center;
   line-height: 24px;
   white-space: nowrap;
@@ -1110,7 +1125,8 @@ img.top-banner-pc {
   width: 27px;
   font-weight: 600;
   color: #575757;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 20px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1130,14 +1146,16 @@ img.top-banner-pc {
 .sec-apeal-zero-g .text-wrapper-3 {
   position: relative;
   width: fit-content;
-  margin-top: -1px;
+  /* margin-top: -1px; */
   font-family: "Red Hat Display", Helvetica;
   font-weight: 900;
   color: #1e547d;
-  font-size: 40px;
-  text-align: center;
+  font-size: 2.5rem;
+  /* font-size: 2.5rem; px */
+  /* text-align: center; */
   letter-spacing: 5.2px;
-  line-height: 32px;
+  /* line-height: 32px; */
+  line-height: 100% !important;
   white-space: nowrap;
 }
 
@@ -1145,7 +1163,8 @@ img.top-banner-pc {
   width: fit-content;
   font-weight: 600;
   color: #575757;
-  font-size: 16px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   line-height: 16px;
   white-space: nowrap;
   position: relative;
@@ -1156,21 +1175,39 @@ img.top-banner-pc {
 
 .sec-apeal-zero-g .frame-3 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
   gap: 0px 0px;
   align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   justify-content: center;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-apeal-zero-g .frame-3 {
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-flow: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px 0px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: center;
+    position: relative;
+  }
 }
 
 .sec-apeal-zero-g .div-wrapper {
   display: flex;
   flex-direction: column;
-  width: 210px;
-  height: 210px;
+  /* width: 210px; */
+  height: 13rem;
+  aspect-ratio: 1;
   align-items: center;
   gap: 10px;
   background-image: url(./img/round_white.png);
@@ -1184,7 +1221,8 @@ img.top-banner-pc {
   align-self: stretch;
   font-weight: 600;
   color: #1e547d;
-  font-size: 16px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   line-height: 33.6px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1210,7 +1248,8 @@ img.top-banner-pc {
   width: fit-content;
   font-weight: 600;
   color: #1e547d;
-  font-size: 16px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   line-height: 33.6px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1248,7 +1287,7 @@ img.top-banner-pc {
 
 .sec-apeal-zero-g .unique-title {
   display: flex;
-  width: 250px;
+  width: fit-content;
   align-items: center;
   padding: 6px 28px;
   position: relative;
@@ -1268,13 +1307,13 @@ img.top-banner-pc {
   margin-top: -0.5px;
   font-weight: 600;
   color: #333333;
-  font-size: 17px;
+  font-size: 1rem;
+  /* font-size: 1.1rem; px */
   line-height: 25.5px;
   position: relative;
   font-family: "Roboto", Helvetica;
   text-align: center;
   letter-spacing: 0;
-
 }
 
 .sec-apeal-zero-g .content {
@@ -1300,7 +1339,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 37.5px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1311,7 +1351,8 @@ img.top-banner-pc {
 .sec-apeal-zero-g .txt {
   flex: 1;
   color: transparent;
-  font-size: 27px;
+  font-size: 1.68rem;
+  /* font-size: 27px; px */
   line-height: 40.5px;
   position: relative;
   align-self: stretch;
@@ -1327,13 +1368,15 @@ img.top-banner-pc {
 
 .sec-apeal-zero-g .text-wrapper-9 {
   color: #3da9fc;
-  font-size: 19px;
+  font-size: 1.1rem;
+  /* font-size: 19px; px */
   line-height: 28.5px;
 }
 
 .sec-apeal-zero-g .text-wrapper-10 {
   color: #333333;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   line-height: 36px;
 }
 
@@ -1342,7 +1385,8 @@ img.top-banner-pc {
   align-self: stretch;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 30px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1363,14 +1407,6 @@ img.top-banner-pc {
   position: relative;
 }
 
-@media screen and (min-width:768px) {
-  .sec-apeal-zero-g .grids {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column: 3;
-  }
-}
-
 .sec-apeal-zero-g .frame-6 {
   display: flex;
   flex-direction: column;
@@ -1378,7 +1414,7 @@ img.top-banner-pc {
   gap: 32px;
   padding: 32px 16px;
   align-self: stretch;
-  width: 100%;
+  width: 40%;
   flex: 0 0 auto;
   justify-content: center;
   position: relative;
@@ -1387,6 +1423,7 @@ img.top-banner-pc {
 .sec-apeal-zero-g .frame-7 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   align-self: stretch;
@@ -1394,9 +1431,19 @@ img.top-banner-pc {
   flex: 0 0 auto;
   justify-content: center;
   position: relative;
-  
+
   padding: 2rem;
 }
+/* 
+@media screen and (min-width:768px) {
+ 
+.sec-apeal-zero-g .grids{
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 2;
+}
+ 
+} */
 
 .sec-apeal-zero-g .IMAGE {
   /* height: 96px; */
@@ -1424,7 +1471,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #0ca7ab;
-  font-size: 23px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   line-height: 34.5px;
   white-space: nowrap;
   position: relative;
@@ -1437,7 +1485,8 @@ img.top-banner-pc {
   width: fit-content;
   font-weight: 700;
   color: #0ca7ab;
-  font-size: 23px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   line-height: 34.5px;
   white-space: nowrap;
   position: relative;
@@ -1451,7 +1500,8 @@ img.top-banner-pc {
   width: 100%;
   font-weight: 700;
   color: #575757;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   line-height: 27.2px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1470,13 +1520,13 @@ img.top-banner-pc {
   position: relative;
 }
 
-
 .sec-apeal-zero-g .text-wrapper-15 {
   width: fit-content;
   margin-top: -1px;
   font-weight: 700;
   color: #3da9fc;
-  font-size: 23px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   line-height: 34.5px;
   white-space: nowrap;
   position: relative;
@@ -1491,7 +1541,8 @@ img.top-banner-pc {
   margin-right: -4.5px;
   font-weight: 700;
   color: #3da9fc;
-  font-size: 23px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   line-height: 34.5px;
   white-space: nowrap;
   position: relative;
@@ -1539,7 +1590,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 37.5px;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -1549,7 +1601,8 @@ img.top-banner-pc {
 
 .sec-apeal-zero-g .txt-2 {
   color: #3da9fc;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   line-height: 36px;
   position: relative;
   align-self: stretch;
@@ -1564,16 +1617,14 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 30px;
   position: relative;
   font-family: "Roboto", Helvetica;
   text-align: center;
   letter-spacing: 0;
 }
-
-
-
 
 /* section08 flow*/
 .sec-point {
@@ -1606,7 +1657,8 @@ img.top-banner-pc {
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 40px;
+  font-size: 2.5rem;
+  /* font-size: 2.5rem; px */
   text-align: center;
   letter-spacing: 3.6px;
   line-height: 57.6px;
@@ -1617,7 +1669,8 @@ img.top-banner-pc {
   width: 143px;
   font-weight: 700;
   color: #333333;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   letter-spacing: 0.85px;
   line-height: 18px;
   position: relative;
@@ -1626,8 +1679,9 @@ img.top-banner-pc {
 }
 
 .sec-point .frame-2 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column; */
+  grid-auto-flow: row;
   align-items: flex-start;
   gap: 55px;
   padding: 16px 0px;
@@ -1635,6 +1689,22 @@ img.top-banner-pc {
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-point .frame-2 {
+    display: grid;
+    /* flex-direction: column; */
+    grid-auto-flow: column;
+    grid-column: 3;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 16px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
 }
 
 .sec-point .frame-3 {
@@ -1660,17 +1730,19 @@ img.top-banner-pc {
   border-radius: 30px;
   border: 1px solid;
   border-color: #333333;
+  width: fit-content;
 }
 
 .sec-point .text-wrapper-2 {
-  flex: 1;
-  margin-top: -1px;
+  /* flex: 1; */
+  display: flex;
+  flex-wrap: nowrap;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 0;
   line-height: 25.6px;
-  position: relative;
   font-family: "Roboto", Helvetica;
   text-align: center;
 }
@@ -1703,7 +1775,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #3da9fc;
-  font-size: 32px;
+  font-size: 2rem;
+  /* font-size: 32px; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 48px;
@@ -1724,7 +1797,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 600;
   color: #333333;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   letter-spacing: 0;
   line-height: 36px;
   white-space: nowrap;
@@ -1754,7 +1828,8 @@ img.top-banner-pc {
   margin-right: -0.25px;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   letter-spacing: 0;
   line-height: 25.6px;
   position: relative;
@@ -1785,7 +1860,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #3da9fc;
-  font-size: 40px;
+  font-size: 2.5rem;
+  /* font-size: 2.5rem; px */
   letter-spacing: 0;
   line-height: 60px;
   white-space: nowrap;
@@ -1809,7 +1885,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 600;
   color: #333333;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   letter-spacing: 0;
   line-height: 36px;
   position: relative;
@@ -1834,7 +1911,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 600;
   color: #333333;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 25.6px;
@@ -1845,7 +1923,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #333333;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   letter-spacing: 0;
   line-height: 36px;
   white-space: nowrap;
@@ -1866,7 +1945,8 @@ img.top-banner-pc {
   width: fit-content;
   font-weight: 600;
   color: #333333;
-  font-size: 24px;
+  font-size: 1.5rem;
+  /* font-size: 1.5rem; px */
   letter-spacing: 0;
   line-height: 50.8px;
   white-space: nowrap;
@@ -1885,7 +1965,9 @@ img.top-banner-pc {
   padding: 2rem 1rem;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg,
+      rgb(33, 33, 33) 0%,
+      rgba(0, 0, 0, 0) 100%);
   background-image: url(./img/components/background/flow_bg.jpeg);
   background-size: cover;
   background-position: 50% 50%;
@@ -1908,7 +1990,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #fffafa;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   text-align: center;
   letter-spacing: 0.85px;
   line-height: 18px;
@@ -1921,7 +2004,8 @@ img.top-banner-pc {
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   color: #fffafa;
-  font-size: 40px;
+  font-size: 2.5rem;
+  /* font-size: 2.5rem; px */
   text-align: center;
   letter-spacing: 3.6px;
   line-height: 57.6px;
@@ -1934,13 +2018,13 @@ img.top-banner-pc {
   justify-content: center;
   display: flex;
   position: relative;
-  align-self: stretch;
+  /* align-self: stretch; */
   width: 100%;
   flex: 0 0 auto;
 
   /* padding: 5rem; */
-  max-width: 40rem;
-  gap:3rem
+  max-width: 48rem;
+  gap: 3rem;
 }
 
 .flow .element {
@@ -1954,6 +2038,34 @@ img.top-banner-pc {
   flex: 0 0 auto;
 }
 
+.flow .flow-cols {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flow .ellipse {
+  position: relative;
+  background-color: #3da9fc;
+  border-radius: 32px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #fffafa;
+  font-size: 1.5rem;
+  text-align: center;
+  /* letter-spacing: 3.52px; */
+  line-height: 100%;
+  white-space: nowrap;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  aspect-ratio: 1/1;
+  padding: 0.5rem;
+}
+
 .flow .desc {
   gap: 16px;
   display: flex;
@@ -1963,11 +2075,14 @@ img.top-banner-pc {
   flex: 1;
   align-self: stretch;
   flex-grow: 1;
+  width: 60vw;
 }
 
+
 .flow .text-wrapper-2 {
-  margin-top: -1px;
-  font-size: 20px;
+  /* margin-top: -1px; */
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   line-height: 30px;
   position: relative;
   align-self: stretch;
@@ -1975,10 +2090,12 @@ img.top-banner-pc {
   font-weight: 700;
   color: #fffafa;
   letter-spacing: 0;
+  padding-top: 0.3rem;
 }
 
 .flow .text-wrapper-3 {
-  font-size: 12px;
+  font-size: 0.9rem;
+  /* font-size: 12px; px */
   line-height: 27.2px;
   position: relative;
   align-self: stretch;
@@ -2003,19 +2120,9 @@ img.top-banner-pc {
   flex: 0 0 auto;
 }
 
-.flow .desc-2 {
-  gap: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  flex-grow: 1;
-}
-
 .flow .text-wrapper-4 {
-  font-size: 16px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   line-height: 27.2px;
   position: relative;
   align-self: stretch;
@@ -2023,18 +2130,6 @@ img.top-banner-pc {
   font-weight: 700;
   color: #fffafa;
   letter-spacing: 0;
-}
-
-
-.flow .desc-3 {
-  gap: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  flex-grow: 1;
 }
 
 /* section10 */
@@ -2071,7 +2166,8 @@ img.top-banner-pc {
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   color: #151515;
-  font-size: 40px;
+  font-size: 2.5rem;
+  /* font-size: 2.5rem; px */
   text-align: center;
   letter-spacing: 3.6px;
   line-height: 40px;
@@ -2081,7 +2177,8 @@ img.top-banner-pc {
   align-self: stretch;
   font-weight: 600;
   color: #151515;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   text-align: center;
   letter-spacing: 0.85px;
   line-height: 17px;
@@ -2090,15 +2187,13 @@ img.top-banner-pc {
 }
 
 .staff .grid-dependcss {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
   align-items: center;
   justify-content: center;
-  gap: 8px 16px;
-  position: relative;
-  align-self: stretch;
+  /* align-self: stretch; */
   width: 100%;
-  flex: 0 0 auto;
 }
 
 .staff .div-2 {
@@ -2107,6 +2202,7 @@ img.top-banner-pc {
   align-items: center;
   justify-content: center;
   position: relative;
+  gap:1rem;
   flex: 0 0 auto;
 }
 
@@ -2120,8 +2216,8 @@ img.top-banner-pc {
 
 .staff .IMAGE {
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   object-fit: cover;
 }
 
@@ -2141,7 +2237,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #333333;
-  font-size: 13px;
+  font-size: 0.9rem;
+  /* font-size: 13px; px */
   letter-spacing: 0;
   line-height: 24px;
   white-space: nowrap;
@@ -2166,7 +2263,8 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #1e547d;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* font-size: 1.25rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 30px;
@@ -2179,7 +2277,9 @@ img.top-banner-pc {
   width: fit-content;
   font-weight: 700;
   color: #333333;
-  font-size: 20px;
+  font-size: calc(20 / 16rem);
+
+  /* font-size: 1.25rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 30px;
@@ -2270,7 +2370,8 @@ img.top-banner-pc {
   width: 65.69px;
   margin-top: -1px;
   color: #123d5e;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   position: relative;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
@@ -2285,7 +2386,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   letter-spacing: 0;
   line-height: 22.5px;
 }
@@ -2302,7 +2404,8 @@ img.top-banner-pc {
   width: 32.84px;
   margin-top: -1px;
   color: #123d5e;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   position: relative;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
@@ -2314,7 +2417,8 @@ img.top-banner-pc {
   width: fit-content;
   margin-top: -1px;
   color: #333333;
-  font-size: 14px;
+  font-size: 0.875rem;
+  /* font-size: 0.875rem; px */
   white-space: nowrap;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -2335,7 +2439,8 @@ img.top-banner-pc {
   width: 49.26px;
   margin-top: -1px;
   color: #123d5e;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   position: relative;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
@@ -2358,7 +2463,8 @@ img.top-banner-pc {
   width: 82.11px;
   margin-top: -1px;
   color: #123d5e;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   position: relative;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
@@ -2373,7 +2479,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   letter-spacing: 0;
   line-height: 22.5px;
   white-space: nowrap;
@@ -2382,7 +2489,8 @@ img.top-banner-pc {
 .sec .text-wrapper-8 {
   width: fit-content;
   color: #333333;
-  font-size: 14px;
+  font-size: 0.875rem;
+  /* font-size: 0.875rem; px */
   white-space: nowrap;
   position: relative;
   font-family: "Roboto", Helvetica;
@@ -2403,7 +2511,8 @@ img.top-banner-pc {
   width: 86.49px;
   margin-top: -1px;
   color: #333333;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   position: relative;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
@@ -2428,7 +2537,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #333333;
-  font-size: 15px;
+  font-size: 1rem;
+  /* font-size: 1rem; px */
   letter-spacing: 0;
   line-height: 22.5px;
   white-space: nowrap;
@@ -2536,10 +2646,12 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #0ca7ab;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 27px;
+  text-wrap: nowrap;
 }
 
 .sec-footer .frame-3 {
@@ -2564,7 +2676,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #ff8b03;
-  font-size: 17px;
+  font-size: 1.1rem;
+  /* font-size: 1.1rem; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 27px;
@@ -2592,7 +2705,8 @@ img.top-banner-pc {
   font-family: "Roboto", Helvetica;
   font-weight: 400;
   color: #333333;
-  font-size: 11px;
+  font-size: 0.6rem;
+  /* font-size: 11px; px */
   text-align: center;
   letter-spacing: 0;
   line-height: 18px;
