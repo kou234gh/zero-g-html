@@ -453,7 +453,7 @@ width: 100%;
   width: 100% !important;
 
   /* height: fit-content; */
-  height: 3rem;
+  height: 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
 }
@@ -535,6 +535,7 @@ width: 100%;
   border-radius: 5px;
   border: 1px solid;
   border-color: #33333366;
+  padding: 0.5rem;
 }
 
 .contact .submit {
@@ -546,6 +547,7 @@ width: 100%;
   position: relative;
   align-self: stretch;
   width: 100%;
+
 }
 
 .contact .frame-6 {
@@ -557,12 +559,14 @@ width: 100%;
   position: relative;
   flex: 1;
   flex-grow: 1;
-  margin-top: -10px;
-  margin-bottom: -10px;
+
   background-color: #1e547d;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
+  width: fit-content;
+ 
+
 }
 
 .contact .text-wrapper-15 {
@@ -593,6 +597,8 @@ width: 100%;
   padding-left: 30px;
   cursor: pointer;
   font-size: 18px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
 }
 .control input {
   position: absolute;
