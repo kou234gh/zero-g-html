@@ -334,6 +334,7 @@ input {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 4vw;
+  width: 100%;
 }
 
 @media screen and (min-width: 500px) {
@@ -358,7 +359,8 @@ input {
   position: relative;
   /* align-self: stretch; */
   /* width: 100%; */
-  width: fit-content;
+  /* width: fit-content; */
+  width: 100%;
   flex: 0 0 auto;
 }
 
@@ -435,7 +437,8 @@ input {
   padding: 10px;
   position: relative;
   align-self: stretch;
-  width: fit-content;
+  /* width: fit-content; */
+width: 100%;
   flex: 0 0 auto;
 }
 
@@ -447,7 +450,8 @@ input {
   border-radius: 5px;
   border: 1px solid;
   border-color: #33333366;
-  width: fit-content !important;
+  width: 100% !important;
+
   /* height: fit-content; */
   height: 3rem;
   padding: 0.5rem;
