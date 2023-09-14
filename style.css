@@ -74,6 +74,8 @@ a.button_common {
   background-image: url(./img/origin-logo-transparent.png);
   background-size: cover;
   background-position: 50% 50%;
+
+
 }
 
 
@@ -87,6 +89,9 @@ a.button_common {
   max-height: 4.5rem;
   /* width: 100%; */
   aspect-ratio: 146/36;
+  /* animation-iteration-count: 1,;
+  animation-delay: 3s;
+  animation-duration: 2s; */
 }
 
 /* section01 .svg*/
@@ -2322,8 +2327,9 @@ img.top-banner-pc {
   gap: 10px;
   position: relative;
   align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  width: fit-content;
+  aspect-ratio: 376/161
+  /* flex: 0 0 auto; */
 }
 
 .sec .frame-2 {
@@ -2335,8 +2341,7 @@ img.top-banner-pc {
 }
 
 .sec .frame-3 {
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 32px;
@@ -2347,29 +2352,45 @@ img.top-banner-pc {
   flex: 0 0 auto;
   background-color: #fffafa;
   border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 
 .sec .frame-4 {
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  /* position: relative; */
+  /* align-self: stretch; */
+  /* width: fit-content; */
+  /* max-width: 300px; */
+  /* flex: 0 0 auto; */
+  width: fit-content;
+  max-width: 575px;
+}
+
+.sec .frame-4 p{
+  font-size: 0.8rem;
+  word-wrap: normal;
+  width: fit-content;
 }
 
 .sec .frame-5 {
   display: inline-flex;
   align-items: flex-start;
-  gap: 38px;
+  gap: 4vw;
   position: relative;
   flex: 0 0 auto;
 }
 
+
+
 .sec .text-wrapper {
-  width: 65.69px;
+  width: fit-content;
+  min-width: 5rem;
   margin-top: -1px;
   color: #123d5e;
   font-size: 1rem;
@@ -2547,11 +2568,13 @@ img.top-banner-pc {
 }
 
 .sec .element {
-  position: relative;
+  width: 100%;
+  max-width: 300px;
+  /* position: relative;
   align-self: stretch;
   width: 100%;
   height: 252px;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 /* section14 */
