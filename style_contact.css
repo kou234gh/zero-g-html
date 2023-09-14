@@ -1,3 +1,15 @@
+input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -38,7 +50,8 @@
 
 .contact .div {
   position: relative;
-  width: 107px;
+  width: fit-content;
+  max-width: 100%;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
   color: #151515;
@@ -54,9 +67,9 @@
   align-items: center;
   justify-content: center;
   gap: 32px;
-  padding: 24px 16px;
-  align-self: stretch;
-  width: 100%;
+  padding: 1.5rem 1rem;
+  width: fit-content;
+  max-width: 100%;
   background-color: #eceeef33;
   border-radius: 15px;
   overflow: hidden;
@@ -304,7 +317,7 @@
 }
 
 .contact .forms {
-  gap: 24px;
+  gap: 4vw;
   padding: 23px 0px;
   display: flex;
   flex-direction: column;
@@ -316,15 +329,36 @@
   flex: 0 0 auto;
 }
 
+.contact .grids-2cols,
+.contact .grids-3cols {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 4vw;
+}
+
+@media screen and (min-width: 500px) {
+  .contact .grids-2cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2vw;
+    ;
+  }
+
+  .contact .grids-3cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2vw;
+  }
+}
+
 .contact .div-2 {
   gap: 8px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  /* justify-content: center; */
   position: relative;
-  align-self: stretch;
-  width: 100%;
+  /* align-self: stretch; */
+  /* width: 100%; */
+  width: fit-content;
   flex: 0 0 auto;
 }
 
@@ -342,13 +376,15 @@
 }
 
 .contact .view-3 {
-  display: inline-flex;
-  align-items: flex-end;
+
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   padding: 0px 8px;
   position: relative;
   flex: 0 0 auto;
+  height: 1.1rem;
 }
 
 .contact .text-wrapper-11 {
@@ -368,7 +404,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  /* gap: 10px; */
   padding: 4px 8px;
   border-radius: 5px;
   border: 1px solid;
@@ -399,7 +435,7 @@
   padding: 10px;
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: fit-content;
   flex: 0 0 auto;
 }
 
@@ -407,10 +443,15 @@
   position: relative;
   flex: 1;
   flex-grow: 1;
-  height: 48px;
+  /* height: 48px; */
   border-radius: 5px;
   border: 1px solid;
   border-color: #33333366;
+  width: fit-content !important;
+  /* height: fit-content; */
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .contact .important-wrapper {
@@ -443,6 +484,8 @@
   white-space: nowrap;
   position: relative;
   font-family: "Roboto", Helvetica;
+
+  padding-bottom: 1rem;
 }
 
 .contact .question-2 {
@@ -492,7 +535,7 @@
 
 .contact .submit {
   display: flex;
-  height: 68px;
+  height: fit-content;
   align-items: center;
   gap: 10px;
   padding: 10px;
@@ -503,7 +546,7 @@
 
 .contact .frame-6 {
   display: flex;
-  height: 68px;
+  height: 2rem;
   align-items: center;
   gap: 24px;
   padding: 8px 32px;
@@ -515,12 +558,14 @@
   background-color: #1e547d;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .contact .text-wrapper-15 {
   width: fit-content;
   font-weight: 700;
   color: #fffdfd;
+  background-color: transparent;
   font-size: 18px;
   text-align: center;
   letter-spacing: 2.52px;
@@ -533,5 +578,73 @@
 .contact .frame-7 {
   position: relative;
   flex: 0 0 auto;
+  height: 1.3rem;
+  aspect-ratio: 1/1.5;
   margin-right: -17.2px;
+}
+
+/*Checkboxes styles*/
+.control {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  border: 1px solid #333333;
+  border-radius: 3px;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+/* .control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+} */
+/* .control input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+} */
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  /* left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 8px; */
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #333333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
 }
