@@ -135,7 +135,7 @@ img.top-banner-pc {
     rgba(0, 0, 0, 0.2) 55.21%,
     rgba(0, 0, 0, 0) 100%
   );
-  background-image: url(./img/components/background/banner-stretch.png);
+  background-image: url(./img/components/background/converted_banner-stretch.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -522,7 +522,7 @@ img.top-banner-pc {
     rgb(245, 246, 248) 0%,
     rgba(245, 246, 248, 0) 100%
   );
-  background-image: url(./img/components/background/merit-stretch.jpeg);
+  background-image: url(./img/components/background/converted_merit-stretch.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -906,7 +906,7 @@ img.top-banner-pc {
     rgb(245, 246, 248) 0%,
     rgba(245, 246, 248, 0) 100%
   );
-  background-image: url(./img/components/background/reviews.jpeg);
+  background-image: url(./img/components/background/converted_reviews.webp);
 
   background-size: cover;
   background-position: 50% 50%;
@@ -1098,7 +1098,7 @@ img.top-banner-pc {
     rgb(244, 245, 247) 0%,
     rgba(255, 253.94, 253.94, 0) 100%
   );
-  background-image: url(./img/components/background/bg-2.jpg);
+  background-image: url(./img/components/background/converted_bg-2.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -1645,7 +1645,7 @@ img.top-banner-pc {
   gap: 48px;
   padding: 64px 32px;
   position: relative;
-  background-image: url(img/components/background/merit-stretch.jpeg);
+  background-image: url(img/components/background/converted_merit-stretch.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -1980,7 +1980,7 @@ img.top-banner-pc {
     rgb(33, 33, 33) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-  background-image: url(./img/components/background/flow_bg.jpeg);
+  background-image: url(./img/components/background/converted_flow_bg.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2155,7 +2155,7 @@ img.top-banner-pc {
   gap: 57px;
   padding: 48px 16px;
   position: relative;
-  background-image: url(./img/components/background/staff_bg.jpeg);
+  background-image: url(./img/components/background/converted_staff_bg.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2607,7 +2607,7 @@ img.top-banner-pc {
   gap: 7px;
   padding-bottom: 1rem !important;
   position: relative;
-  background-image: url(./img/components/background/merit-stretch.jpeg);
+  background-image: url(./img/components/background/converted_merit-stretch.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
