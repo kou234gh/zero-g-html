@@ -22,7 +22,7 @@ body {
 section {
   width: 100%;
 
-  padding: 8vw !important;
+  padding: 8vw 8vw !important;
   gap:8vw !important;
 }
 

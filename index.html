@@ -7,19 +7,17 @@
     <title>ZERO-G ストレッチ専門店</title>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="style-tablet.css" /> -->
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
+    <link rel="stylesheet" href="./animate-scroll/style.css" />
+    
   </head>
 
   <body>
     <!-- section header -->
     <div class="header">
-      <div class="origin-logo-bg"></div>
+      <div class="origin-logo-bg" data-san="slideRight" data-san-delay="600"></div>
       <a class="button_common" href="./contact.html"
         ><img
           class="button-svg animate__animated animate__rubberBand animate__repeat-1 animate__delay-3s"
@@ -30,20 +28,20 @@
     <!-- section_01 -->
     <!-- sp 320px~767px  -->
     <img
-      loading="lazy"
-      class="top-banner-sp"
+      loading="eager"
+      class="top-banner-sp "
+      data-san="fade"
       src="./img/sec01_mainbanner/main_banner_sp.svg"
       alt="最大限の開放、無重力の実感"
     />
     <!-- tblet 768~1199px && pc 1200px~ -->
     <img
-      loading="lazy"
+      loading="eager"
+      data-san="fade"
       class="top-banner-pc"
       src="./img/sec01_mainbanner/main_banner_pc.svg"
       alt="最大限の開放、無重力の実感"
     />
-      
-
 
     <!-- section_02 id="banner-stretch" -->
     <section id="banner-stretch-1" class="banner-stretch">
@@ -54,6 +52,7 @@
     </div> -->
       <svg
         class="title"
+        data-san="slideTop"
         width="873"
         height="116"
         viewBox="0 0 873 116"
@@ -106,9 +105,9 @@
           <img class="clip-path-group" src="img/sec02/title.svg" />
         </div>
         <div class="frame-2">
-          <img class="price-before" src="img/sec02/60-7200.svg" />
-          <img class="img-2 img-2_arrow" src="img/sec02/arrow.svg" />
-          <img class="price-after" src="img/sec02/5700.svg" />
+          <img class="price-before" data-san="slideRight" src="img/sec02/60-7200.svg" />
+          <img class="img-2 img-2_arrow" src="img/sec02/arrow.svg" data-san="fade" data-san-delay="200" />
+          <img class="price-after" data-san="slideRight" data-san-delay="600" src="img/sec02/5700.svg" />
         </div>
         <img class="line-2" src="img/sec02/line-13.png" />
         <div class="description">
@@ -142,12 +141,13 @@
 
     <!-- section_03 -->
     <section class="merit-stretch">
-      <div class="title">
-        <img class="clip-path-group" src="img/clip-path-group.svg" />
+      <div class="title" data-san="slideTop">
+        <!-- <img class="clip-path-group" src="img/clip-path-group.svg" /> -->
+        <img class="clip-path-group" src="img/sec03/clip-path-group.svg" />
       </div>
       <div class="view">
         <div class="div">
-          <img loading="lazy" class="frame" src="img/sec03/merit1.png" />
+          <img loading="lazy" data-san="slideRight" data-san-delay="200" class="frame" src="img/sec03/merit1.png" />
           <div class="view-2">
             <div class="div-wrapper">
               <p class="text-wrapper">
@@ -162,7 +162,9 @@
           </div>
         </div>
         <div class="view-3">
-          <img loading="lazy" class="frame" src="img/sec03/merit2.png" />
+          <img loading="lazy" data-san="slideRight"
+          data-san-delay="200"
+          class="frame" src="img/sec03/merit2.png" />
           <div class="view-4">
             <div class="div-wrapper">
               <div class="flexcontainer">
@@ -182,7 +184,7 @@
           </div>
         </div>
         <div class="view-3">
-          <img loading="lazy" class="frame" src="img/sec03/merit3.png" />
+          <img data-san="slideRight" data-san-delay="200" loading="lazy" class="frame" src="img/sec03/merit3.png" />
           <div class="view-4">
             <div class="div-wrapper">
               <div class="flexcontainer">
@@ -206,9 +208,9 @@
 
     <!-- section_04 -->
     <section class="recommend">
-      <img class="title-cover" src="img/sec04_recommend/title.svg" />
+      <img class="title-cover" data-san="fade" src="img/sec04_recommend/title.svg" />
       <div class="frame">
-        <div class="div">
+        <div class="div" data-san="slideRight" data-san-delay="200">
           <img
             loading="lazy"
             class="rec-img"
@@ -220,7 +222,7 @@
             </div>
             <!-- <div class="bg-blackshapes"><p class="text-wrapper-2">疲れが取れない</div></div> -->
             <!-- <div class="bg-blackshapes"></div> -->
-            <img src="./img/bg-blackshapes-1.svg" />
+            <img src="./img/sec04_recommend/bg-blackshapes-1.svg" />
             <div class="div-wrapper-2">
               <p class="text-wrapper-3">
                 身体のバランスを整え、頭痛や肩こり,体質を根本から改善<br />健康になりたい。そんなあなたにピッタリです!!
@@ -228,7 +230,7 @@
             </div>
           </div>
         </div>
-        <div class="div-reverse">
+        <div class="div-reverse" data-san="slideLeft" data-san-delay="200">
           <img
             loading="lazy"
             class="rec-img grid-order-2"
@@ -240,7 +242,7 @@
             </div>
             <!-- <div class="bg-blackshapes-2"><p class="text-wrapper-2">筋トレが続かない</div></div> -->
             <!-- <div class="bg-blackshapes-2"></div> -->
-            <img src="./img/bg-blackshapes-2.svg" />
+            <img src="./img/sec04_recommend/bg-blackshapes-2.svg" />
             <div class="div-wrapper-2">
               <o class="text-wrapper-3">
                 ストレッチのプロの任せるだけ、大きい筋肉の深層部までアプローチし動かず姿勢改善、代謝UP。
@@ -248,7 +250,7 @@
             </div>
           </div>
         </div>
-        <div class="div">
+        <div class="div" data-san="slideRight" data-san-delay="200">
           <img
             loading="lazy"
             class="rec-img"
@@ -260,7 +262,7 @@
             </div>
             <!-- <div class="bg-blackshapes-3"><p class="text-wrapper-5">ダイエット効果を実感したい</div></div> -->
             <!-- <div class="bg-blackshapes-3"></div> -->
-            <img src="./img/bg-blackshapes-3.svg" />
+            <img src="./img/sec04_recommend/bg-blackshapes-3.svg" />
             <div class="div-wrapper-2">
               <p class="text-wrapper-3">
                 柔軟性、基礎代謝UPで日々エネルギー消費量向上。<br />理想のボディラインへ!!
@@ -271,12 +273,13 @@
       </div>
     </section>
     <!-- section_05　繰り返し -->
-    <section id="banner-stretch-2" class="banner-stretch">
+    <section id="banner-stretch-2" class="banner-stretch" data-san="fade">
       <!-- <div class="title">
       <img class="frame" src="img/lines-left.svg" />
       <p class="text-wrapper">回数券でこんなお得に！！</div>
       <div class="lines"><img class="line" src="img/line-8.svg" /> <img class="img" src="img/line-9.svg" /></div>
     </div> -->
+
       <svg
         class="title"
         width="873"
@@ -375,7 +378,7 @@
         <div class="review">
           <div class="top">
             <div class="frame-2">
-              <img class="img" src="img/icon-2.png" />
+              <img class="img" src="img/sec06_reviews/icon-2.png" />
               <p class="text-wrapper-2">会社員50歳</p>
             </div>
             <div class="title">
@@ -385,7 +388,10 @@
             </div>
           </div>
           <div class="bottom">
-            <img class="img_hukidasi" src="img/hukidasi_bottom.png" />
+            <img
+              class="img_hukidasi"
+              src="img/sec06_reviews/hukidasi_bottom.png"
+            />
             <p class="text-wrapper-4">
               今まで自分で行ってきたストレッチとは違い、専門家の体系的なアドバイスは効果が大きく継続して行うことに繋がりました。<br />@@<br />@@<br />@@
             </p>
@@ -394,7 +400,7 @@
         <div class="review">
           <div class="top">
             <div class="frame-2">
-              <img class="img" src="img/icon-1.png" />
+              <img class="img" src="img/sec06_reviews/icon-1.png" />
               <p class="text-wrapper-2">会社員50歳</p>
             </div>
             <div class="title">
@@ -404,7 +410,10 @@
             </div>
           </div>
           <div class="bottom">
-            <img class="img_hukidasi" src="img/hukidasi_bottom.png" />
+            <img
+              class="img_hukidasi"
+              src="img/sec06_reviews/hukidasi_bottom.png"
+            />
             <p class="text-wrapper-4">
               今まで自分で行ってきたストレッチとは違い、専門家の体系的なアドバイスは効果が大きく継続して行うことに繋がりました。<br />@@<br />@@<br />@@
             </p>
@@ -413,7 +422,7 @@
         <div class="review">
           <div class="top">
             <div class="frame-2">
-              <img class="img" src="img/icon.png" />
+              <img class="img" src="img/sec06_reviews/icon.png" />
               <p class="text-wrapper-2">会社員50歳</p>
             </div>
             <div class="title">
@@ -423,7 +432,10 @@
             </div>
           </div>
           <div class="bottom">
-            <img class="img_hukidasi" src="img/hukidasi_bottom.png" />
+            <img
+              class="img_hukidasi"
+              src="img/sec06_reviews/hukidasi_bottom.png"
+            />
             <p class="text-wrapper-4">
               今まで自分で行ってきたストレッチとは違い、専門家の体系的なアドバイスは効果が大きく継続して行うことに繋がりました。<br />@@<br />@@<br />@@
             </p>
@@ -434,7 +446,7 @@
 
     <!-- section_07 -->
     <section class="sec-apeal-zero-g">
-      <div class="frame">
+      <div class="frame" data-san="fade">
         <div class="div">
           <p class="text-wrapper">ストレッチ専門店</p>
           <p class="text-wrapper-2">の</p>
@@ -445,17 +457,17 @@
         </div>
       </div>
       <div class="frame-3-summary">
-        <div class="div-wrapper">
+        <div class="div-wrapper" data-san="fade">
           <p class="text-wrapper-5">
             マッサージでは<br />届かない深層部まで<br />アプローチ!
           </p>
         </div>
-        <div class="div-wrapper">
+        <div class="div-wrapper" data-san="fade" data-san-delay="200">
           <p class="text-wrapper-5">
             プロによる施術<br />だから効率よく<br />効果を実感!
           </p>
         </div>
-        <div class="div-wrapper">
+        <div class="div-wrapper" data-san="fade" data-san-delay="400">
           <p class="text-wrapper-5">ご要望に沿った<br />あなただけのプラン</p>
         </div>
       </div>
@@ -479,7 +491,7 @@
             <div class="frame-5-grids">
               <div class="frame-6">
                 <div class="frame-7">
-                  <img class="IMAGE" src="img/image-some-rect.jpg" />
+                  <img class="IMAGE" src="img/sec07_apeal_zerog/image-some-rect.jpg" />
                 </div>
                 <div class="frame-8">
                   <p class="text-wrapper-12">即効性のある</p>
@@ -492,7 +504,7 @@
               </div>
               <div class="frame-6">
                 <div class="frame-7">
-                  <img class="IMAGE" src="img/image-some-rect.jpg" />
+                  <img class="IMAGE" src="img/sec07_apeal_zerog/image-some-rect.jpg" />
                 </div>
                 <div class="frame-3">
                   <p class="text-wrapper-15">より神経や血管に近い</p>
@@ -574,12 +586,12 @@
     </section>
     <!-- section_09 -->
     <section class="flow">
-      <div class="title">
+      <div class="title" data-san-delay="200" data-san="fade">
         <p class="text-wrapper">体験の流れ</p>
         <div class="div">FLOW</div>
       </div>
       <div class="contents">
-        <div class="element">
+        <div class="element" data-san-delay="200" data-san="fade">
           <div class="desc">
             <div class="flow-cols">
               <div class="ellipse">01</div>
@@ -592,8 +604,8 @@
           </div>
           <img loading="lazy" class="image" src="img/sec09_flow/image-0.png" />
         </div>
-        <img class="flow-arrow" src="img/flow-arrow.png" />
-        <div class="element">
+        <img class="flow-arrow" data-san-delay="200" data-san="slideBottom" src="img/sec09_flow/flow-arrow.png" />
+        <div class="element" data-san-delay="200" data-san="fade">
           <div class="desc">
             <div class="flow-cols">
               <div class="ellipse">02</div>
@@ -605,8 +617,8 @@
           </div>
           <img loading="lazy" class="image" src="img/sec09_flow/image-1.png" />
         </div>
-        <img class="flow-arrow" src="img/flow-arrow.png" />
-        <div class="element">
+        <img class="flow-arrow" data-san-delay="200" data-san="slideBottom" src="img/sec09_flow/flow-arrow.png" />
+        <div class="element" data-san-delay="200" data-san="fade">
           <div class="desc">
             <div class="flow-cols">
               <div class="ellipse">03</div>
@@ -619,8 +631,8 @@
           </div>
           <img loading="lazy" class="image" src="img/sec09_flow/image-2.png" />
         </div>
-        <img class="flow-arrow" src="img/flow-arrow.png" />
-        <div class="element">
+        <img class="flow-arrow" data-san-delay="200" data-san="slideBottom" src="img/sec09_flow/flow-arrow.png" />
+        <div class="element" data-san-delay="200" data-san="fade">
           <div class="desc">
             <div class="flow-cols">
               <div class="ellipse">04</div>
@@ -633,8 +645,8 @@
           </div>
           <img loading="lazy" class="image" src="img/sec09_flow/image-3.png" />
         </div>
-        <img class="flow-arrow" src="img/flow-arrow.png" />
-        <div class="element">
+        <img class="flow-arrow" data-san-delay="200" data-san="slideBottom" src="img/sec09_flow/flow-arrow.png" />
+        <div class="element" data-san-delay="200" data-san="fade">
           <div class="desc">
             <div class="flow-cols">
               <div class="ellipse">05</div>
@@ -650,7 +662,7 @@
       </div>
     </section>
     <!-- section_10 -->
-    <section id="banner-stretch-3" class="banner-stretch">
+    <section id="banner-stretch-3" class="banner-stretch" data-san="fade">
       <!-- <div class="title">
       <img class="frame" src="img/lines-left.svg" />
       <p class="text-wrapper">回数券でこんなお得に！！</div>
@@ -755,7 +767,7 @@
       <div class="grid-dependcss">
         <div class="div-2">
           <div class="photo">
-            <img class="IMAGE" src="img/image-some-rounded.png" />
+            <img class="IMAGE" src="img/sec12_staff/image-some-rounded.png" />
           </div>
           <div class="name">
             <p class="text-wrapper-2">@@トレーナー</p>
@@ -763,7 +775,7 @@
         </div>
         <div class="div-2">
           <div class="photo">
-            <img class="IMAGE" src="img/image-some-rounded.png" />
+            <img class="IMAGE" src="img/sec12_staff/image-some-rounded.png" />
           </div>
           <div class="name">
             <p class="text-wrapper-2">@@トレーナー</p>
@@ -771,7 +783,7 @@
         </div>
         <div class="div-2">
           <div class="photo">
-            <img class="IMAGE" src="img/image-some-rounded.png" />
+            <img class="IMAGE" src="img/sec12_staff/image-some-rounded.png" />
           </div>
           <div class="name">
             <p class="text-wrapper-2">@@トレーナー</p>
@@ -779,7 +791,7 @@
         </div>
         <div class="div-2">
           <div class="photo">
-            <img class="IMAGE" src="img/image-some-rounded.png" />
+            <img class="IMAGE" src="img/sec12_staff/image-some-rounded.png" />
           </div>
           <div class="name">
             <p class="text-wrapper-2">@@トレーナー</p>
@@ -787,7 +799,7 @@
         </div>
         <div class="div-2">
           <div class="photo">
-            <img class="IMAGE" src="img/image-some-rounded.png" />
+            <img class="IMAGE" src="img/sec12_staff/image-some-rounded.png" />
           </div>
           <div class="name">
             <p class="text-wrapper-2">@@トレーナー</p>
@@ -795,7 +807,7 @@
         </div>
         <div class="div-2">
           <div class="photo">
-            <img class="IMAGE" src="img/image-some-rounded.png" />
+            <img class="IMAGE" src="img/sec12_staff/image-some-rounded.png" />
           </div>
           <div class="name">
             <p class="text-wrapper-2">@@トレーナー</p>
@@ -811,7 +823,10 @@
     <section class="sec">
       <div class="frame">
         <div class="div">
-          <div class="frame-2"></div>
+          <img
+            class="frame-2"
+            src="./img/components/logo/logo-transparent.png"
+          />
         </div>
         <div class="frame-3">
           <div class="frame-4">
@@ -845,8 +860,16 @@
               </p>
             </div>
           </div>
-          <div class="div">
-            <img class="element" src="img/2023-08-30-18-01-1.png" />
+          <div class="google_map">
+            <!-- <img class="element" src="img/2023-08-30-18-01-1.png" /> -->
+            <iframe
+              class="element"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655.712451123668!2d136.92710324824296!3d35.16913890370602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370ec06995033%3A0x2280824ed7cc08a9!2z44CSNDYwLTAwMDcg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy65paw5qCE77yT5LiB55uu77yV4oiS77ySIOODgeOCteODiOODj-OCpOODhA!5e0!3m2!1sja!2sjp!4v1694744013664!5m2!1sja!2sjp"
+              style="border: 0"
+              allow="fullscreen"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -867,7 +890,7 @@
       alt="最大限の開放、無重力の実感"
     />
     <!-- section_15 -->
-    <section id="banner-stretch" class="banner-stretch">
+    <section id="banner-stretch" class="banner-stretch" data-san="fade">
       <!-- <div class="title">
       <img class="frame" src="img/lines-left.svg" />
       <p class="text-wrapper">回数券でこんなお得に！！</div>
@@ -964,27 +987,27 @@
     <!-- section_16 会社概要？-->
 
     <!-- section_17 -->
-    <section class="sec-footer">
+    <section class="sec-footer" >
       <div class="frame">
         <div class="frame-wrapper">
           <div class="logo-transparent-wrapper">
             <img
               class="logo-transparent"
-              src="img/logo-transparent-black.png"
+              src="img/components/logo/logo-transparent-black.png"
             />
           </div>
         </div>
         <div class="div">
           <div class="frame-2">
-            <img class="img" src="img/logo-line.png" />
+            <img class="img" src="img/components/logo/logo-line.png" />
             <p class="text-wrapper">公式SNS</p>
           </div>
-          <div class="frame-3">
-            <p class="text-wrapper-2">シェア！</p>
+          <div class="frame-2">
+            <p class="text-wrapper">シェア！</p>
             <div class="frame-4">
-              <img class="img" src="img/logo-facebook.png" />
-              <img class="img" src="img/logo-line.png" />
-              <img class="img" src="img/logo-x.png" />
+              <img class="img" src="img/components/logo/logo-facebook.png" />
+              <img class="img" src="img/components/logo/logo-line.png" />
+              <img class="img" src="img/components/logo/logo-x.png" />
             </div>
           </div>
         </div>
@@ -992,5 +1015,8 @@
       <div class="rectangle"></div>
       <p class="p">Copyright© @@ All rights reserved.</p>
     </section>
+
+
+<script src="./animate-scroll/script.js"></script>
   </body>
 </html>

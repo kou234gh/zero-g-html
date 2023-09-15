@@ -25,8 +25,7 @@ a.button_common {
   width: fit-content;
 } */
 
-
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 18px !important;
   }
@@ -36,7 +35,7 @@ a.button_common {
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   html {
     font-size: 22px !important;
   }
@@ -71,14 +70,10 @@ a.button_common {
   min-height: 2.5rem;
   max-height: 3.5rem;
   aspect-ratio: 77/29;
-  background-image: url(./img/origin-logo-transparent.png);
+  background-image: url(./img/components/logo/origin-logo-transparent.png);
   background-size: cover;
   background-position: 50% 50%;
-
-
 }
-
-
 
 .header .button-svg {
   position: relative;
@@ -130,14 +125,16 @@ img.top-banner-pc {
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 4vw !important;
   padding: 64px 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.2) 55.21%,
-      rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 55.21%,
+    rgba(0, 0, 0, 0) 100%
+  );
   background-image: url(./img/components/background/banner-stretch.png);
   background-size: cover;
   background-position: 50% 50%;
@@ -149,8 +146,11 @@ img.top-banner-pc {
   justify-content: center;
   padding: 2px 1px;
   position: relative;
-  align-self: stretch;
+  /* align-self: stretch; */
   width: 100%;
+
+  height: fit-content;
+  max-height: 5rem;
   flex: 0 0 auto;
 }
 
@@ -504,9 +504,11 @@ img.top-banner-pc {
   padding: 32px 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg,
-      rgb(245, 246, 248) 0%,
-      rgba(245, 246, 248, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(245, 246, 248) 0%,
+    rgba(245, 246, 248, 0) 100%
+  );
   background-image: url(./img/components/background/merit-stretch.jpeg);
   background-size: cover;
   background-position: 50% 50%;
@@ -695,7 +697,7 @@ img.top-banner-pc {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4vw;
+  gap: 8vw;
   align-self: stretch;
   width: 100%;
   position: relative;
@@ -731,32 +733,29 @@ img.top-banner-pc {
   width: 100%;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
   .recommend .div {
     grid-template-columns: 40% 1fr !important;
-    align-items: center
+    align-items: center;
   }
-
 
   .recommend .div-reverse {
     grid-template-columns: 1fr 40% !important;
     align-items: center;
   }
 
-  .recommend .grid-order-1{
-    order:1;
+  .recommend .grid-order-1 {
+    order: 1;
   }
 
-  .recommend .grid-order-2{
-    order:2;
+  .recommend .grid-order-2 {
+    order: 2;
   }
 
-  .recommend .rec-img{
+  .recommend .rec-img {
     max-width: 100% !important;
   }
 }
-
-
 
 .recommend .frame-2 {
   display: flex;
@@ -795,7 +794,6 @@ img.top-banner-pc {
   line-height: 21.2px;
   white-space: nowrap;
 }
-
 
 .recommend .div-wrapper-2 {
   display: flex;
@@ -890,10 +888,13 @@ img.top-banner-pc {
   padding: 32px 16px;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg,
-      rgb(245, 246, 248) 0%,
-      rgba(245, 246, 248, 0) 100%);
-  background-image: url(./img/reviews.png);
+  background: linear-gradient(
+    180deg,
+    rgb(245, 246, 248) 0%,
+    rgba(245, 246, 248, 0) 100%
+  );
+  background-image: url(./img/components/background/reviews.jpeg);
+
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -1079,9 +1080,11 @@ img.top-banner-pc {
   padding: 3rem 1rem;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg,
-      rgb(244, 245, 247) 0%,
-      rgba(255, 253.94, 253.94, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(244, 245, 247) 0%,
+    rgba(255, 253.94, 253.94, 0) 100%
+  );
   background-image: url(./img/components/background/bg-2.jpg);
   background-size: cover;
   background-position: 50% 50%;
@@ -1100,14 +1103,14 @@ img.top-banner-pc {
   position: relative;
 }
 
-.sec-apeal-zero-g .frame-3-summary{
+.sec-apeal-zero-g .frame-3-summary {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap:4vw
+  gap: 4vw;
 }
 
-@media screen and (min-width:768px) {
-  .sec-apeal-zero-g .frame-3-summary{
+@media screen and (min-width: 768px) {
+  .sec-apeal-zero-g .frame-3-summary {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1202,8 +1205,6 @@ img.top-banner-pc {
   position: relative;
 }
 
-
-
 .sec-apeal-zero-g .div-wrapper {
   display: flex;
   flex-direction: column;
@@ -1212,7 +1213,7 @@ img.top-banner-pc {
   aspect-ratio: 1;
   align-items: center;
   gap: 10px;
-  background-image: url(./img/round_white.png);
+  background-image: url(./img/sec07_apeal_zerog/round_white.png);
   background-size: cover;
   background-position: 50% 50%;
   justify-content: center;
@@ -1238,7 +1239,7 @@ img.top-banner-pc {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-image: url(./img/round_white.png);
+  background-image: url(./img/sec07_apeal_zerog/round_white.png);
   background-size: cover;
   background-position: 50% 50%;
   width: 210px;
@@ -1406,13 +1407,11 @@ img.top-banner-pc {
   justify-items: center;
 }
 
-@media screen and (min-width:768px) {
- 
-.sec-apeal-zero-g .frame-5-grids{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
- 
+@media screen and (min-width: 768px) {
+  .sec-apeal-zero-g .frame-5-grids {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .sec-apeal-zero-g .frame-6 {
@@ -1442,8 +1441,6 @@ img.top-banner-pc {
 
   padding: 2rem;
 }
-
-
 
 .sec-apeal-zero-g .IMAGE {
   /* height: 96px; */
@@ -1965,9 +1962,11 @@ img.top-banner-pc {
   padding: 2rem 1rem;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  background: linear-gradient(180deg,
-      rgb(33, 33, 33) 0%,
-      rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(33, 33, 33) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   background-image: url(./img/components/background/flow_bg.jpeg);
   background-size: cover;
   background-position: 50% 50%;
@@ -2079,7 +2078,6 @@ img.top-banner-pc {
   width: 60%;
 }
 
-
 .flow .text-wrapper-2 {
   /* margin-top: -1px; */
   font-size: 1.25rem;
@@ -2144,7 +2142,7 @@ img.top-banner-pc {
   gap: 57px;
   padding: 48px 16px;
   position: relative;
-  background-image: url(./img/staff_bg.jpeg);
+  background-image: url(./img/components/background/staff_bg.jpeg);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -2204,10 +2202,11 @@ img.top-banner-pc {
   align-items: center;
   justify-content: center;
   position: relative;
-  gap:1rem;
+  gap: 1rem;
   flex: 0 0 auto;
 
   width: 100%;
+  max-width: 200px;
   aspect-ratio: 1;
 }
 
@@ -2326,18 +2325,25 @@ img.top-banner-pc {
   justify-content: center;
   gap: 10px;
   position: relative;
-  align-self: stretch;
+  /* align-self: stretch; */
   width: fit-content;
-  aspect-ratio: 376/161
+  aspect-ratio: 376/161;
   /* flex: 0 0 auto; */
+}
+
+.sec .google_map {
+  /* width: 100%;
+  max-width: 500px; */
+  width: fit-content;
+  aspect-ratio: 1;
 }
 
 .sec .frame-2 {
   position: relative;
   height: 10vw;
   aspect-ratio: 376/161;
-  background-image: url(./img/logo-transparent.png);
-  background-size: 100% 100%;
+  /* background-image: url(); */
+  /* background-size: 100% 100%; */
 }
 
 .sec .frame-3 {
@@ -2356,7 +2362,6 @@ img.top-banner-pc {
   justify-content: space-evenly;
 }
 
-
 .sec .frame-4 {
   display: flex;
   /* flex-wrap: wrap; */
@@ -2372,7 +2377,7 @@ img.top-banner-pc {
   max-width: 575px;
 }
 
-.sec .frame-4 p{
+.sec .frame-4 p {
   font-size: 0.8rem;
   word-wrap: normal;
   width: fit-content;
@@ -2385,8 +2390,6 @@ img.top-banner-pc {
   position: relative;
   flex: 0 0 auto;
 }
-
-
 
 .sec .text-wrapper {
   width: fit-content;
@@ -2570,6 +2573,7 @@ img.top-banner-pc {
 .sec .element {
   width: 100%;
   max-width: 300px;
+  aspect-ratio: 1;
   /* position: relative;
   align-self: stretch;
   width: 100%;
@@ -2587,7 +2591,7 @@ img.top-banner-pc {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  padding: 48px 16px;
+  padding-bottom: 1rem !important;
   position: relative;
   background-image: url(./img/components/background/merit-stretch.jpeg);
   background-size: cover;
@@ -2615,6 +2619,8 @@ img.top-banner-pc {
   gap: 10px;
   position: relative;
   flex: 0 0 auto;
+  width: 70%;
+  max-width: 300px;
 }
 
 .sec-footer .logo-transparent-wrapper {
@@ -2628,17 +2634,18 @@ img.top-banner-pc {
 
 .sec-footer .logo-transparent {
   position: relative;
-  width: 235.46px;
-  height: 101.2px;
+  width: 100%;
   object-fit: cover;
+  aspect-ratio: 235/101;
 }
 
 .sec-footer .div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 2rem;
   padding: 10px;
   align-self: stretch;
   width: 100%;
@@ -2651,11 +2658,23 @@ img.top-banner-pc {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 24px;
-  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  /* background-color: #ffffff; */
   border-radius: 15px;
   position: relative;
   flex: 0 0 auto;
+
+  width: fit-content;
+  max-width: 600px;
+  /* padding: 30px; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(0px);
+  box-shadow: 0 5px 20px #3da9fc94;
 }
 
 .sec-footer .img {
@@ -2670,7 +2689,7 @@ img.top-banner-pc {
   width: fit-content;
   font-family: "Roboto", Helvetica;
   font-weight: 700;
-  color: #0ca7ab;
+  color: #1e547d;
   font-size: 1.1rem;
   /* font-size: 1.1rem; px */
   text-align: center;
