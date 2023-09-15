@@ -70,7 +70,7 @@ a.button_common {
   min-height: 2.5rem;
   max-height: 3.5rem;
   aspect-ratio: 77/29;
-  background-image: url(./img/components/logo/origin-logo-transparent.png);
+  background-image: url(./img/components/logo/origin-logo-transparent.webp);
   background-size: cover;
   background-position: 50% 50%;
 }
