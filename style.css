@@ -90,7 +90,6 @@ a.button_common {
 }
 
 /* section01 .svg*/
-
 img.top-banner-sp {
   width: 100%;
   object-fit: cover;
@@ -99,9 +98,15 @@ img.top-banner-sp {
 }
 
 img.top-banner-pc {
-  display: none;
-}
+  /* display: none; */
+  width: 100%;
+    height: 100vh;
+    display: block;
 
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+/* 
 @media screen and (min-width: 768px) {
   img.top-banner-sp {
     display: none;
@@ -115,7 +120,7 @@ img.top-banner-pc {
     object-fit: cover;
     object-position: 50% 50%;
   }
-}
+} */
 
 /* section02 */
 .banner-stretch {
@@ -449,7 +454,8 @@ img.top-banner-pc {
   width: fit-content;
   margin-top: -1px;
   font-weight: 700;
-  color: #08a39c;
+  /* color: #08a39c; */
+  color: #1e547d;
   font-size: 1rem;
   /* font-size: 1.1rem; px */
   text-align: center;
