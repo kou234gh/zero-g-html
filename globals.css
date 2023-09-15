@@ -26,6 +26,7 @@ section {
   gap:8vw !important;
 }
 
+
 p {
   word-break: keep-all;
   overflow-wrap: break-word;

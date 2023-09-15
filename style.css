@@ -253,9 +253,30 @@ img.top-banner-pc {
   gap: 16px;
   padding: 17px 24px;
   position: relative;
-  align-self: stretch;
+  /* align-self: stretch; */
   width: 100%;
   flex: 0 0 auto;
+}
+
+
+.banner-stretch .img-2 {
+  position: relative;
+  flex: 0 0 auto;
+  /* aspect-ratio: ; */
+}
+
+.banner-stretch img.price-before {
+  aspect-ratio: 131/64;
+  width: 50%;
+}
+
+.banner-stretch img.img-2_arrow {
+  aspect-ratio: 50/24;
+}
+
+.banner-stretch img.price-after {
+  aspect-ratio: 202/67;
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -267,8 +288,8 @@ img.top-banner-pc {
     gap: 16px;
     padding: 17px 24px;
     position: relative;
-    align-self: stretch;
-    width: 100%;
+    /* align-self: stretch; */
+    width: 80%;
     flex: 0 0 auto;
   }
 
@@ -277,27 +298,19 @@ img.top-banner-pc {
     flex: 0 0 auto;
     transform: rotate(-90deg);
   }
+
+  .banner-stretch img.price-before {
+    /* aspect-ratio: 131/64; */
+    width: 20%;
+  }
+  
+  .banner-stretch img.price-after {
+    /* aspect-ratio: 202/67; */
+    width: 60%;
+  }
+
 }
 
-.banner-stretch .img-2 {
-  position: relative;
-  flex: 0 0 auto;
-  /* aspect-ratio: ; */
-}
-
-.banner-stretch img.price-before {
-  aspect-ratio: 131/64;
-  width: 35%;
-}
-
-.banner-stretch img.img-2_arrow {
-  aspect-ratio: 50/24;
-}
-
-.banner-stretch img.price-after {
-  aspect-ratio: 202/67;
-  width: 60%;
-}
 
 .banner-stretch .line-2 {
   width: 100%;
@@ -2192,6 +2205,7 @@ img.top-banner-pc {
   gap: 12vw;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   /* align-self: stretch; */
   width: 100%;
 }
@@ -2243,7 +2257,7 @@ img.top-banner-pc {
   margin-top: -1px;
   font-weight: 700;
   color: #333333;
-  font-size: 0.6rem;
+  font-size: 14px;
   /* font-size: 13px; px */
   letter-spacing: 0;
   line-height: 24px;
