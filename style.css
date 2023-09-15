@@ -1232,7 +1232,7 @@ img.top-banner-pc {
   aspect-ratio: 1;
   align-items: center;
   gap: 10px;
-  background-image: url(./img/sec07_apeal_zerog/round_white.png);
+  background-image: url(./img/sec07_apeal_zerog/round_white.webp);
   background-size: cover;
   background-position: 50% 50%;
   justify-content: center;
@@ -1258,7 +1258,7 @@ img.top-banner-pc {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-image: url(./img/sec07_apeal_zerog/round_white.png);
+  background-image: url(./img/sec07_apeal_zerog/round_white.webp);
   background-size: cover;
   background-position: 50% 50%;
   width: 210px;
