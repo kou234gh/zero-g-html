@@ -755,10 +755,21 @@
     </div>
   </section>
   <!-- section_14 -->
+
   <!-- sp 320px~767px  -->
-  <img loading="lazy" class="top-banner-sp" src="./img/sec01_mainbanner/main_banner_sp.svg" alt="最大限の開放、無重力の実感" />
-  <!-- tblet 768~1199px && pc 1200px~ -->
+  <!-- <img loading="lazy" class="top-banner-sp" src="./img/sec01_mainbanner/main_banner_sp.svg" alt="最大限の開放、無重力の実感" />
+  tblet 768~1199px && pc 1200px~
   <img loading="lazy" class="top-banner-pc" src="./img/sec01_mainbanner/main_banner_pc.svg" alt="最大限の開放、無重力の実感" />
+   -->
+  <!-- cf) https://developer.mozilla.org/ja/docs/Web/HTML/Element/picture 軽量化のため画像の条件分岐-->
+  <picture>
+    <source loading="eager" class="top-banner-sp" data-san="fade" srcset="./img/sec01_mainbanner/main_banner_sp.svg"
+      media="(max-width: 767px)" alt="最大限の開放、無重力の実感" />
+    <img loading="eager" data-san="fade" src="./img/sec01_mainbanner/main_banner_pc.svg" class="top-banner-pc"
+      alt="最大限の開放、無重力の実感" />
+  </picture>
+
+
   <!-- section_15 -->
   <section id="banner-stretch" class="banner-stretch">
     <!-- <div class="title">
